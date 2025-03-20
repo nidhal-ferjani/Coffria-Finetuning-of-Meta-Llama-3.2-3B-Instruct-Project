@@ -1,0 +1,35 @@
+
+
+torch --index-url https://download.pytorch.org/whl/cu118
+torchvision --index-url https://download.pytorch.org/whl/cu118
+torchaudio --index-url https://download.pytorch.org/whl/cu118
+# Install xformers for PyTorch 2.x
+xformers[torch2]
+
+# Install 'unsloth' (from GitHub repo)
+unsloth[colab] @ git+https://github.com/unslothai/unsloth.git
+
+# Install Hugging Face 'transformers' (from GitHub repo)
+git+https://github.com/huggingface/transformers.git
+
+# Install trl
+trl
+
+# Install boto3
+
+
+# Install PyTorch, torchvision, torchaudio with CUDA 11.8 support again
+torch --index-url https://download.pytorch.org/whl/cu118
+torchvision --index-url https://download.pytorch.org/whl/cu118
+torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+
+from_root
+
+pydrive 
+google-api-python-client
+huggingface_hub
+
+
+-e .
+

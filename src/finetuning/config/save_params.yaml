@@ -1,0 +1,8 @@
+google_params:
+  google_drive_folder_id: "1ccsbDkDnK9vaBvRMFMwhpKzT82qge15m"  # Google Drive folder ID
+  modele_name_compresse: "llama_backup_v1.tar.gz"  # Model name zip saved on drive
+  local_model_folder: "src/finetuning/llama-store-finetuned"  # Local folder where the model will be saved
+
+hugging_face_params:
+  depot_name: "NidhalFerjani/llama-3.2-3b-finetuned-coffria-v1"  # Model name
+  access_token: "*****************"  # Hugging Face access token

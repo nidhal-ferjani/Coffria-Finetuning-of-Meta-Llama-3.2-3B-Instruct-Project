@@ -1,0 +1,6 @@
+# model_loading_params.yaml
+model_loading_params:
+  model_name: "unsloth/Llama-3.2-3B-Instruct"
+  max_seq_length: 2048
+  dtype: null  # Auto détection
+  load_in_4bit: true
