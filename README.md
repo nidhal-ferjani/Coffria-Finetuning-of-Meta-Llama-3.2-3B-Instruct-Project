@@ -5,7 +5,9 @@ README.txt
 ## 📌 Introduction
 
 Ce projet fournit un script Python modulaire conçu pour affiner le modèle pré-entraîné Llama 3.2 3B. L'objectif principal est d'améliorer la capacité du modèle à traiter des dialogues en français, spécifiquement pour les tâches de recherche documentaire sur la plateforme Coffria. Coffria est une plateforme dédiée à la recherche sécurisée de documents professionnels. Ce script facilite l'adaptation du modèle pour gérer des requêtes et des résultats liés à des documents académiques, des études de marché et des rapports, optimisant ainsi son utilisation dans un contexte professionnel francophone.
+
 ---
+
 ## ⚙️ Prérequis Techniques
 
 Avant de commencer, assurez-vous que votre environnement dispose des prérequis suivants :
@@ -62,7 +64,8 @@ AWS (Optionnel) : Si vous souhaitez télécharger le modèle vers AWS S3, config
 
  python -m src.finetuning.fine_tuning
 
-Le script chargera le modèle, préparera le dataset, lancera l'affinage, sauvegardera le modèle affiné et (optionnellement) le téléchargera vers Hugging Face Hub et S3, selon votre configuration.
+Le script chargera le modèle, préparera le dataset, lancera l'affinage, sauvegardera le modèle affiné et (optionnellement) le téléchargera vers Hugging Face Hub et Google Drive, selon votre configuration.
+---
 
 🔧 Guide de Configuration
 La configuration du projet est gérée via des fichiers YAML pour une modularité accrue :
@@ -109,6 +112,7 @@ dataset_num_proc: 2                            # Nombre de processus pour le dat
 ```
 
 Modifiez ces fichiers YAML pour adapter la configuration à vos besoins spécifiques (modèle, dataset, hyperparamètres, chemins, identifiants AWS).
+---
 
 🛠 Maintenance et Améliorations Possibles :
 
@@ -125,7 +129,6 @@ Support pour d'autres modèles Llama ou modèles de langage : Étendre le script
 Documentation et tests unitaires : Ajouter une documentation plus complète du code (docstrings, commentaires) et développer des tests unitaires pour assurer la robustesse et la qualité du code.
 
 ---
-
 Licence 📜✨ :
 
 Ce projet est sous licence MIT.
