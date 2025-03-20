@@ -29,9 +29,10 @@ boto3
 pydrive
 google-api-python-client
 huggingface_hub
--e
+-e .
+```
 
-## Installation et Utilisation
+🚀 Installation et Utilisation
 1. Cloner le dépôt GitHub :
 
 git clone [URL_DU_DÉPÔT]
@@ -62,18 +63,21 @@ python -m src.finetuning.fine_tuning
 
 Le script chargera le modèle, préparera le dataset, lancera l'affinage, sauvegardera le modèle affiné et (optionnellement) le téléchargera vers Hugging Face Hub et S3, selon votre configuration.
 
-## Guide de Configuration
+🔧 Guide de Configuration
 La configuration du projet est gérée via des fichiers YAML pour une modularité accrue :
 
 - model_loading_params.yaml : Paramètres de Chargement du Modèle
-
+  
+```text
 model_name: "unsloth/Llama-3.2-3B-Instruct"  # Nom du modèle Hugging Face
 quantization_bits: 4                     # Bits pour la quantification (4 ou 8)
 device: "cuda"                           # 'cuda' ou 'cpu'
 max_seq_length: 2048                     # Longueur maximale des séquences
+```
 
 - lora_params.yaml : Paramètres LoRA (Low-Rank Adaptation)
-
+  
+```text
 r: 16                # Rang LoRA
 lora_alpha: 32       # Alpha LoRA
 lora_dropout: 0.05   # Dropout LoRA
@@ -85,9 +89,11 @@ target_modules:      # Modules cibles pour LoRA
   - gate_proj
   - up_proj
   - down_proj
+```
 
 - trainer_params.yaml : Paramètres de l'Entraîneur (Trainer)  
 
+```text
 dataset_path: "path/dialogues_dataset.json"    # Chemin vers votre dataset JSON
 output_dir: "llama-3b-coffria-french"          # Répertoire de sortie pour le modèle affiné
 per_device_train_batch_size: 4                 # Batch size par GPU
@@ -99,10 +105,11 @@ weight_decay: 0.01                             # Décroissance du poids
 logging_steps: 50                              # Fréquence des logs
 num_epochs: 3                                  # Nombre d'époques
 dataset_num_proc: 2                            # Nombre de processus pour le dataset
+```
 
 Modifiez ces fichiers YAML pour adapter la configuration à vos besoins spécifiques (modèle, dataset, hyperparamètres, chemins, identifiants AWS).
 
-## Maintenance et Améliorations Possibles
+🛠 Maintenance et Améliorations Possibles
 Ce script modulaire fournit une base solide pour l'affinage du modèle Llama 3.2 3B. Voici quelques pistes d'amélioration et de maintenance :
 
 Ajout de métriques d'évaluation : Intégrer des métriques d'évaluation (perplexity, métriques spécifiques à la tâche) pendant et après l'entraînement pour un suivi plus précis des performances du modèle.
