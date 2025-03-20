@@ -5,7 +5,7 @@ README.txt
 ## 📌 Introduction
 
 Ce projet fournit un script Python modulaire conçu pour affiner le modèle pré-entraîné Llama 3.2 3B. L'objectif principal est d'améliorer la capacité du modèle à traiter des dialogues en français, spécifiquement pour les tâches de recherche documentaire sur la plateforme Coffria. Coffria est une plateforme dédiée à la recherche sécurisée de documents professionnels. Ce script facilite l'adaptation du modèle pour gérer des requêtes et des résultats liés à des documents académiques, des études de marché et des rapports, optimisant ainsi son utilisation dans un contexte professionnel francophone.
-
+---
 ## ⚙️ Prérequis Techniques
 
 Avant de commencer, assurez-vous que votre environnement dispose des prérequis suivants :
