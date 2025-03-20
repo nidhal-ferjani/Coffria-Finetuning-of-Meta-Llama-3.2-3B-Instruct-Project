@@ -40,16 +40,17 @@ cd [NOM_DU_RÉPERTOIRE_DU_DÉPÔT]
 
 2. Créer et activer un environnement virtuel (recommandé) :
 
-python -m venv venv
-source venv/bin/activate  # ou venv\Scripts\activate sur Windows
+ python -m venv venv
+ source venv/bin/activate  # ou venv\Scripts\activate sur Windows
 
 3. Installer les dépendances :
 
-pip install -r requirements.txt
+ pip install -r requirements.txt
 
 4. Configuration :
 
-Fichiers YAML : Le script utilise des fichiers YAML pour la configuration. Assurez-vous que les fichiers model_loading_params.yaml, lora_params.yaml et trainer_params.yaml sont correctement configurés (voir section "🔧 Configuration").
+ Fichiers YAML : Le script utilise des fichiers YAML pour la configuration. Assurez-vous que les fichiers model_loading_params.yaml, lora_params.yaml et 
+ trainer_params.yaml sont correctement configurés (voir section "🔧 Configuration").
 
 Dataset : Préparez votre jeu de données de dialogues en français et anglais au format JSON, ou modifiez le script pour utiliser un dataset Hugging Face existant. Modifiez le chemin vers votre dataset dans trainer_params.yaml ou directement dans le script principal (fine_tuning.py) si nécessaire.
 
@@ -57,9 +58,9 @@ AWS (Optionnel) : Si vous souhaitez télécharger le modèle vers AWS S3, config
 
 5. Lancer l'affinage :
 
-Exécutez le script principal fine_tuning.py :
+ Exécutez le script principal fine_tuning.py :
 
-python -m src.finetuning.fine_tuning
+ python -m src.finetuning.fine_tuning
 
 Le script chargera le modèle, préparera le dataset, lancera l'affinage, sauvegardera le modèle affiné et (optionnellement) le téléchargera vers Hugging Face Hub et S3, selon votre configuration.
 
@@ -122,4 +123,8 @@ Support pour d'autres modèles Llama ou modèles de langage : Étendre le script
 
 Documentation et tests unitaires : Ajouter une documentation plus complète du code (docstrings, commentaires) et développer des tests unitaires pour assurer la robustesse et la qualité du code.
 
-🖊 Contribu
+Licence 📜✨
+Ce projet est sous licence MIT.
+Vous êtes libre de l'utiliser, le modifier et le partager, à condition de créditer correctement les contributeurs d'origine.
+
+Pour plus de détails, consultez le fichier LICENSE. 🏛️
