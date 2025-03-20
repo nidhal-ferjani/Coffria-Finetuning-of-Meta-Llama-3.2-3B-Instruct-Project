@@ -124,6 +124,8 @@ Support pour d'autres modèles Llama ou modèles de langage : Étendre le script
 
 Documentation et tests unitaires : Ajouter une documentation plus complète du code (docstrings, commentaires) et développer des tests unitaires pour assurer la robustesse et la qualité du code.
 
+---
+
 Licence 📜✨ :
 
 Ce projet est sous licence MIT.
