@@ -65,6 +65,7 @@ AWS (Optionnel) : Si vous souhaitez télécharger le modèle vers AWS S3, config
  python -m src.finetuning.fine_tuning
 
 Le script chargera le modèle, préparera le dataset, lancera l'affinage, sauvegardera le modèle affiné et (optionnellement) le téléchargera vers Hugging Face Hub et Google Drive, selon votre configuration.
+
 ---
 
 🔧 Guide de Configuration
@@ -112,6 +113,7 @@ dataset_num_proc: 2                            # Nombre de processus pour le dat
 ```
 
 Modifiez ces fichiers YAML pour adapter la configuration à vos besoins spécifiques (modèle, dataset, hyperparamètres, chemins, identifiants AWS).
+
 ---
 
 🛠 Maintenance et Améliorations Possibles :
@@ -129,6 +131,7 @@ Support pour d'autres modèles Llama ou modèles de langage : Étendre le script
 Documentation et tests unitaires : Ajouter une documentation plus complète du code (docstrings, commentaires) et développer des tests unitaires pour assurer la robustesse et la qualité du code.
 
 ---
+
 Licence 📜✨ :
 
 Ce projet est sous licence MIT.
