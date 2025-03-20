@@ -110,7 +110,8 @@ dataset_num_proc: 2                            # Nombre de processus pour le dat
 
 Modifiez ces fichiers YAML pour adapter la configuration à vos besoins spécifiques (modèle, dataset, hyperparamètres, chemins, identifiants AWS).
 
-🛠 Maintenance et Améliorations Possibles
+🛠 Maintenance et Améliorations Possibles :
+
 Ce script modulaire fournit une base solide pour l'affinage du modèle Llama 3.2 3B. Voici quelques pistes d'amélioration et de maintenance :
 
 Ajout de métriques d'évaluation : Intégrer des métriques d'évaluation (perplexity, métriques spécifiques à la tâche) pendant et après l'entraînement pour un suivi plus précis des performances du modèle.
@@ -123,7 +124,8 @@ Support pour d'autres modèles Llama ou modèles de langage : Étendre le script
 
 Documentation et tests unitaires : Ajouter une documentation plus complète du code (docstrings, commentaires) et développer des tests unitaires pour assurer la robustesse et la qualité du code.
 
-Licence 📜✨
+Licence 📜✨ :
+
 Ce projet est sous licence MIT.
 Vous êtes libre de l'utiliser, le modifier et le partager, à condition de créditer correctement les contributeurs d'origine.
 
